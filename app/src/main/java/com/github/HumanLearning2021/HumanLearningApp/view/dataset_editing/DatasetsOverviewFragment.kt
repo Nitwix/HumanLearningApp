@@ -70,7 +70,6 @@ class DatasetsOverviewFragment : Fragment() {
          * Button listener to go to the dataset creation fragment when clicked.
          */
         binding.buttonCreateDataset.setOnClickListener {
-            Log.d("CREATE_DATASET", "Clicked create dataset")
             val action =
                 DatasetsOverviewFragmentDirections.actionDatasetsOverviewFragmentToCategoriesEditingFragment()
             findNavController().navigate(action)
