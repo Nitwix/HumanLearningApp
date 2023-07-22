@@ -20,14 +20,14 @@
         class="com.github.HumanLearning2021.HumanLearningApp.view.dataset_list_fragment.DatasetListWidget"
         android:layout_width="wrap_content"
         android:layout_height="650dp"
-        app:layout_constraintBottom_toTopOf="@+id/datasetsOverviewButton"
+        app:layout_constraintBottom_toTopOf="@+id/button_create_dataset"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dsOverviewTitle"
         tools:layout="@layout/fragment_dataset_list" />
 
     <Button
-        android:id="@+id/datasetsOverviewButton"
+        android:id="@+id/button_create_dataset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/DatasetsOverview_createButton"

@@ -61,6 +61,12 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
         prefs = getSharedPreferences("LOGIN", MODE_PRIVATE)
 
+        // for testing
+        val editPrefs = prefs.edit()
+        editPrefs.putBoolean("isAdmin", true)
+        editPrefs.putBoolean("hasLogin", true)
+        editPrefs.apply()
+
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
