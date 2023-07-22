@@ -112,8 +112,8 @@ class GeneralNavigationTest {
     fun openingNavigationAndClickingOnLoginWorks() {
         onView(withId(R.id.drawer_layout)).perform(DrawerActions.open())
         onView(withId(R.id.drawer_layout)).check(matches(isOpen()))
-        onView(withId(R.id.googleSignInWidget)).perform(click())
-        assertCurrentFragmentIsCorrect(R.id.googleSignInWidget)
+        onView(withId(R.id.SideNav_adminMode)).perform(click())
+        assertCurrentFragmentIsCorrect(R.id.SideNav_adminMode)
     }
 
     @Test

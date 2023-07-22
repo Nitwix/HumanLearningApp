@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/SideNav_home_btn"
         android:icon="@drawable/home_icon"
         android:title="@string/Home_title"/>
     <item
-        android:id="@+id/googleSignInWidget"
+        android:id="@+id/SideNav_admin_mode_switch"
+        android:checked="false"
         android:icon="@drawable/ic_baseline_login_24"
-        android:title="@string/SideNav_loginMenu"/>
+        android:title="@string/SideNav_adminMode"
+        android:visible="true"
+        app:actionLayout="@layout/switch_item"
+        app:showAsAction="always" />
 </menu>

@@ -2,6 +2,7 @@ package com.github.HumanLearning2021.HumanLearningApp.view
 
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.get
@@ -72,12 +73,13 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.datasetsOverviewFragment,
                 R.id.learningDatasetSelectionFragment,
-                R.id.homeFragment
+                R.id.SideNav_home_btn
             ),
             findViewById<DrawerLayout>(R.id.drawer_layout)
         )
         setSupportActionBar(toolbar)
         toolbar.setupWithNavController(navController, appBarConfiguration)
+
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_nav)
         bottomNav.setupWithNavController(navController)
